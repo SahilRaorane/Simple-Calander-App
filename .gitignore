@@ -1,0 +1,14 @@
+# Build output
+target/
+
+# Claude Code internal settings (not part of the project)
+.claude/
+
+# Maven wrapper downloaded binaries
+.mvn/maven/
+.mvn/apache-maven-*/
+.mvn/maven-dist.zip
+
+# OS files
+.DS_Store
+Thumbs.db

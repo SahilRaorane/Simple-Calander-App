@@ -1,0 +1,61 @@
+[ {
+  "id" : "SEED0001",
+  "title" : "Team Standup",
+  "date" : "2026-06-10",
+  "startTime" : "09:00",
+  "endTime" : "09:30"
+}, {
+  "id" : "SEED0002",
+  "title" : "Sprint Planning",
+  "date" : "2026-06-10",
+  "startTime" : "10:00",
+  "endTime" : "11:30"
+}, {
+  "id" : "SEED0003",
+  "title" : "Lunch Break",
+  "date" : "2026-06-10",
+  "startTime" : "13:00",
+  "endTime" : "14:00"
+}, {
+  "id" : "SEED0004",
+  "title" : "Code Review Session",
+  "date" : "2026-06-10",
+  "startTime" : "15:00",
+  "endTime" : "16:00"
+}, {
+  "id" : "SEED0005",
+  "title" : "Architecture Discussion",
+  "date" : "2026-06-11",
+  "startTime" : "10:00",
+  "endTime" : "11:00"
+}, {
+  "id" : "SEED0006",
+  "title" : "Client Presentation",
+  "date" : "2026-06-11",
+  "startTime" : "14:00",
+  "endTime" : "15:30"
+}, {
+  "id" : "SEED0007",
+  "title" : "Team Sync",
+  "date" : "2026-06-11",
+  "startTime" : "09:00",
+  "endTime" : "09:45"
+}, {
+  "id" : "SEED0008",
+  "title" : "Release Planning",
+  "date" : "2026-06-12",
+  "startTime" : "11:00",
+  "endTime" : "12:00"
+}, {
+  "id" : "SEED0009",
+  "title" : "QA Walkthrough",
+  "date" : "2026-06-12",
+  "startTime" : "14:00",
+  "endTime" : "15:00"
+}, {
+  "id" : "SEED0010",
+  "title" : "Team Retrospective",
+  "date" : "2026-06-12",
+  "startTime" : "16:00",
+  "endTime" : "17:00"
+} ]
