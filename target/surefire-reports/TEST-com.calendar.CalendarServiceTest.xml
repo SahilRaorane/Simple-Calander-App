@@ -1,104 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.calendar.CalendarServiceTest" time="0.784" tests="40" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.calendar.CalendarServiceTest" time="0.387" tests="40" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="sun.desktop" value="windows"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="java.specification.version" value="1.8"/>
+    <property name="java.specification.version" value="25"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.class.path" value="C:\Sahil Work\IITC\Full Time\Self\ZZZZZZ Claude\ZZZ Resume\Capgamini Java Developer\Project\target\test-classes;C:\Sahil Work\IITC\Full Time\Self\ZZZZZZ Claude\ZZZ Resume\Capgamini Java Developer\Project\target\classes;C:\Users\shubh\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\shubh\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\shubh\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\shubh\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.2\jackson-datatype-jsr310-2.15.2.jar;C:\Users\shubh\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\shubh\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\shubh\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\shubh\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\shubh\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\shubh\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\shubh\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\shubh\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
     <property name="user.timezone" value="America/Chicago"/>
-    <property name="java.vm.specification.version" value="1.8"/>
     <property name="os.name" value="Windows 11"/>
-    <property name="user.country" value="IN"/>
+    <property name="java.vm.specification.version" value="25"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-1.8\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\shubh\AppData\Local\Temp\surefire7073308817492039564\surefirebooter-20260609214320891_3.jar C:\Users\shubh\AppData\Local\Temp\surefire7073308817492039564 2026-06-09T21-43-20_343-jvmRun1 surefire-20260609214320891_1tmp surefire_0-20260609214320891_2tmp"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\shubh\AppData\Local\Temp\surefire5164822238775234566\surefirebooter-20260609215033730_3.jar C:\Users\shubh\AppData\Local\Temp\surefire5164822238775234566 2026-06-09T21-50-33_620-jvmRun1 surefire-20260609215033730_1tmp surefire_0-20260609215033730_2tmp"/>
+    <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Sahil Work\IITC\Full Time\Self\ZZZZZZ Claude\ZZZ Resume\Capgamini Java Developer\Project\target\test-classes;C:\Sahil Work\IITC\Full Time\Self\ZZZZZZ Claude\ZZZ Resume\Capgamini Java Developer\Project\target\classes;C:\Users\shubh\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\shubh\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\shubh\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\shubh\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.2\jackson-datatype-jsr310-2.15.2.jar;C:\Users\shubh\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\shubh\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\shubh\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\shubh\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\shubh\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\shubh\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\shubh\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\shubh\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\shubh"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-1.8\jre"/>
-    <property name="basedir" value="C:\Sahil Work\IITC\Full Time\Self\ZZZZZZ Claude\ZZZ Resume\Capgamini Java Developer\Project"/>
+    <property name="java.version.date" value="2026-04-21"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot"/>
     <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Sahil Work\IITC\Full Time\Self\ZZZZZZ Claude\ZZZ Resume\Capgamini Java Developer\Project"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\shubh\AppData\Local\Temp\surefire7073308817492039564\surefirebooter-20260609214320891_3.jar"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk-1.8\jre\lib\resources.jar;C:\Program Files\Java\jdk-1.8\jre\lib\rt.jar;C:\Program Files\Java\jdk-1.8\jre\lib\jsse.jar;C:\Program Files\Java\jdk-1.8\jre\lib\jce.jar;C:\Program Files\Java\jdk-1.8\jre\lib\charsets.jar;C:\Program Files\Java\jdk-1.8\jre\lib\jfr.jar;C:\Program Files\Java\jdk-1.8\jre\classes"/>
+    <property name="surefire.real.class.path" value="C:\Users\shubh\AppData\Local\Temp\surefire5164822238775234566\surefirebooter-20260609215033730_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="1.8.0_391-b13"/>
+    <property name="java.runtime.version" value="25.0.3+9-LTS"/>
     <property name="user.name" value="shubh"/>
+    <property name="stdout.encoding" value="Cp1252"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk-1.8\jre\lib\endorsed"/>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-25.0.3+9"/>
     <property name="localRepository" value="C:\Users\shubh\.m2\repository"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
     <property name="java.io.tmpdir" value="C:\Users\shubh\AppData\Local\Temp\"/>
-    <property name="java.version" value="1.8.0_391"/>
+    <property name="java.version" value="25.0.3"/>
     <property name="user.dir" value="C:\Sahil Work\IITC\Full Time\Self\ZZZZZZ Claude\ZZZ Resume\Capgamini Java Developer\Project"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-1.8\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Vagrant\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\MinGW\bin;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files\PowerShell\7\;%MAVEN_HOME%\bin;C:\Users\shubh\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\shubh\AppData\Local\Programs\Python\Python312\;C:\Users\shubh\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Oracle\VirtualBox;C:\Users\shubh\AppData\Roaming\npm;C:\Program Files\Apache\apache-maven-3.9.16\bin;;."/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="25.391-b13"/>
-    <property name="java.specification.maintenance.version" value="5"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk-1.8\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot\bin;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Vagrant\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\MinGW\bin;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files\PowerShell\7\;%MAVEN_HOME%\bin;C:\Users\shubh\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\shubh\AppData\Local\Programs\Python\Python312\;C:\Users\shubh\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Oracle\VirtualBox;C:\Users\shubh\AppData\Roaming\npm;C:\Program Files\Apache\apache-maven-3.9.16\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="25.0.3+9-LTS"/>
+    <property name="stdin.encoding" value="Cp1252"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="52.0"/>
+    <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="addEvent_successfullyCreatesEvent" classname="com.calendar.CalendarServiceTest" time="0.597"/>
+  <testcase name="addEvent_successfullyCreatesEvent" classname="com.calendar.CalendarServiceTest" time="0.218"/>
   <testcase name="addEvent_rejectsBlankTitle" classname="com.calendar.CalendarServiceTest" time="0.002"/>
   <testcase name="addEvent_rejectsPastDate" classname="com.calendar.CalendarServiceTest" time="0.001"/>
-  <testcase name="addEvent_rejectsStartAfterEnd" classname="com.calendar.CalendarServiceTest" time="0.002"/>
-  <testcase name="addEvent_rejectsStartEqualToEnd" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="addEvent_rejectsDirectOverlap" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="addEvent_rejectsPartialOverlap_startInside" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="addEvent_rejectsPartialOverlap_endsInside" classname="com.calendar.CalendarServiceTest" time="0.015"/>
-  <testcase name="addEvent_rejectsContainedEvent" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="addEvent_allowsAdjacentEvents" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="addEvent_allowsSameSlotsOnDifferentDays" classname="com.calendar.CalendarServiceTest" time="0.016"/>
-  <testcase name="getEventsForDay_returnsEventsInChronologicalOrder" classname="com.calendar.CalendarServiceTest" time="0.005"/>
-  <testcase name="getEventsForDay_returnsEmptyForDayWithNoEvents" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="getNextAvailableSlot_returnsSlotOnEmptyDay" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="getNextAvailableSlot_returnsSlotAfterExistingEvent" classname="com.calendar.CalendarServiceTest" time="0.007"/>
-  <testcase name="getNextAvailableSlot_returnsSlotInGapBetweenEvents" classname="com.calendar.CalendarServiceTest" time="0.004"/>
+  <testcase name="addEvent_rejectsStartAfterEnd" classname="com.calendar.CalendarServiceTest" time="0.001"/>
+  <testcase name="addEvent_rejectsStartEqualToEnd" classname="com.calendar.CalendarServiceTest" time="0.001"/>
+  <testcase name="addEvent_rejectsDirectOverlap" classname="com.calendar.CalendarServiceTest" time="0.004"/>
+  <testcase name="addEvent_rejectsPartialOverlap_startInside" classname="com.calendar.CalendarServiceTest" time="0.003"/>
+  <testcase name="addEvent_rejectsPartialOverlap_endsInside" classname="com.calendar.CalendarServiceTest" time="0.003"/>
+  <testcase name="addEvent_rejectsContainedEvent" classname="com.calendar.CalendarServiceTest" time="0.006"/>
+  <testcase name="addEvent_allowsAdjacentEvents" classname="com.calendar.CalendarServiceTest" time="0.004"/>
+  <testcase name="addEvent_allowsSameSlotsOnDifferentDays" classname="com.calendar.CalendarServiceTest" time="0.003"/>
+  <testcase name="getEventsForDay_returnsEventsInChronologicalOrder" classname="com.calendar.CalendarServiceTest" time="0.004"/>
+  <testcase name="getEventsForDay_returnsEmptyForDayWithNoEvents" classname="com.calendar.CalendarServiceTest" time="0.003"/>
+  <testcase name="getNextAvailableSlot_returnsSlotOnEmptyDay" classname="com.calendar.CalendarServiceTest" time="0.001"/>
+  <testcase name="getNextAvailableSlot_returnsSlotAfterExistingEvent" classname="com.calendar.CalendarServiceTest" time="0.002"/>
+  <testcase name="getNextAvailableSlot_returnsSlotInGapBetweenEvents" classname="com.calendar.CalendarServiceTest" time="0.003"/>
   <testcase name="getNextAvailableSlot_returnsNullWhenFullyBooked" classname="com.calendar.CalendarServiceTest" time="0.003"/>
-  <testcase name="getNextAvailableSlot_returnsNullWhenSlotDoesNotFit" classname="com.calendar.CalendarServiceTest" time="0.009"/>
-  <testcase name="getNextAvailableSlot_rejectsZeroDuration" classname="com.calendar.CalendarServiceTest" time="0.002"/>
-  <testcase name="persistence_eventsAreReloadedFromFile" classname="com.calendar.CalendarServiceTest" time="0.032"/>
+  <testcase name="getNextAvailableSlot_returnsNullWhenSlotDoesNotFit" classname="com.calendar.CalendarServiceTest" time="0.002"/>
+  <testcase name="getNextAvailableSlot_rejectsZeroDuration" classname="com.calendar.CalendarServiceTest" time="0.001"/>
+  <testcase name="persistence_eventsAreReloadedFromFile" classname="com.calendar.CalendarServiceTest" time="0.034"/>
   <testcase name="getNextAvailableSlot_rejectsPastDate" classname="com.calendar.CalendarServiceTest" time="0.001"/>
-  <testcase name="deleteEvent_removesEventById" classname="com.calendar.CalendarServiceTest" time="0.002"/>
+  <testcase name="deleteEvent_removesEventById" classname="com.calendar.CalendarServiceTest" time="0.003"/>
   <testcase name="search_returnsMatchingEventsCaseInsensitive" classname="com.calendar.CalendarServiceTest" time="0.004"/>
-  <testcase name="updateEvent_successfullyUpdatesAllFields" classname="com.calendar.CalendarServiceTest" time="0.001"/>
-  <testcase name="search_partialMatchWorks" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="updateEvent_keepsExistingValuesWhenNullPassed" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="deleteEvent_isCaseInsensitive" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="updateEvent_rejectsUnknownId" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="search_blankKeywordReturnsAll" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="deleteEvent_rejectsUnknownId" classname="com.calendar.CalendarServiceTest" time="0.016"/>
-  <testcase name="deleteEvent_rejectsBlankId" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="search_returnsEmptyWhenNoMatch" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="updateEvent_rejectsPastDate" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="deleteEvent_onlyRemovesMatchingEvent" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="updateEvent_rejectsStartAfterEnd" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="search_resultsSortedByDateThenTime" classname="com.calendar.CalendarServiceTest" time="0.016"/>
-  <testcase name="updateEvent_rejectsOverlapWithOtherEvent" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="deleteEvent_persistsRemovalToFile" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="updateEvent_doesNotConflictWithItself" classname="com.calendar.CalendarServiceTest" time="0.0"/>
-  <testcase name="updateEvent_persistsChangesToFile" classname="com.calendar.CalendarServiceTest" time="0.016"/>
+  <testcase name="updateEvent_successfullyUpdatesAllFields" classname="com.calendar.CalendarServiceTest" time="0.003"/>
+  <testcase name="search_partialMatchWorks" classname="com.calendar.CalendarServiceTest" time="0.002"/>
+  <testcase name="updateEvent_keepsExistingValuesWhenNullPassed" classname="com.calendar.CalendarServiceTest" time="0.002"/>
+  <testcase name="deleteEvent_isCaseInsensitive" classname="com.calendar.CalendarServiceTest" time="0.003"/>
+  <testcase name="updateEvent_rejectsUnknownId" classname="com.calendar.CalendarServiceTest" time="0.001"/>
+  <testcase name="search_blankKeywordReturnsAll" classname="com.calendar.CalendarServiceTest" time="0.002"/>
+  <testcase name="deleteEvent_rejectsUnknownId" classname="com.calendar.CalendarServiceTest" time="0.001"/>
+  <testcase name="deleteEvent_rejectsBlankId" classname="com.calendar.CalendarServiceTest" time="0.001"/>
+  <testcase name="search_returnsEmptyWhenNoMatch" classname="com.calendar.CalendarServiceTest" time="0.002"/>
+  <testcase name="updateEvent_rejectsPastDate" classname="com.calendar.CalendarServiceTest" time="0.002"/>
+  <testcase name="deleteEvent_onlyRemovesMatchingEvent" classname="com.calendar.CalendarServiceTest" time="0.002"/>
+  <testcase name="updateEvent_rejectsStartAfterEnd" classname="com.calendar.CalendarServiceTest" time="0.002"/>
+  <testcase name="search_resultsSortedByDateThenTime" classname="com.calendar.CalendarServiceTest" time="0.002"/>
+  <testcase name="updateEvent_rejectsOverlapWithOtherEvent" classname="com.calendar.CalendarServiceTest" time="0.003"/>
+  <testcase name="deleteEvent_persistsRemovalToFile" classname="com.calendar.CalendarServiceTest" time="0.003"/>
+  <testcase name="updateEvent_doesNotConflictWithItself" classname="com.calendar.CalendarServiceTest" time="0.002"/>
+  <testcase name="updateEvent_persistsChangesToFile" classname="com.calendar.CalendarServiceTest" time="0.002"/>
 </testsuite>
