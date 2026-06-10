@@ -1,16 +1,26 @@
 package com.calendar;
 
-import com.calendar.model.Event;
-import com.calendar.service.CalendarService;
-import com.calendar.storage.FileStorage;
-import org.junit.jupiter.api.*;
-
 import java.io.File;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.AfterEach;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
+
+import com.calendar.model.Event;
+import com.calendar.service.CalendarService;
+import com.calendar.storage.FileStorage;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class CalendarServiceTest {
@@ -53,6 +63,13 @@ class CalendarServiceTest {
     void addEvent_rejectsBlankTitle() {
         assertThrows(IllegalArgumentException.class,
             () -> service.addEvent("  ", TODAY, time(9, 0), time(9, 30)));
+    }
+
+    @Test
+    @Order(2)
+    void addEvent_rejectsNullTitle() {
+        assertThrows(IllegalArgumentException.class,
+            () -> service.addEvent(null, TODAY, time(9, 0), time(9, 30)));
     }
 
     @Test
@@ -155,6 +172,53 @@ class CalendarServiceTest {
     }
 
     // ──────────────────────────────────────────────────────────────────────────
+    // getRemainingEventsForToday
+    // ──────────────────────────────────────────────────────────────────────────
+
+    @Test
+    @Order(13)
+    void getRemainingToday_returnsEmptyWhenNoEventsToday() {
+        service.addEvent("Tomorrow Event", TOMORROW, time(9, 0), time(10, 0));
+        assertTrue(service.getRemainingEventsForToday().isEmpty());
+    }
+
+    @Test
+    @Order(14)
+    void getRemainingToday_excludesAlreadyEndedEvents() {
+        // Ends at 00:02 — will have passed by the time any realistic test run executes
+        service.addEvent("Midnight Past", TODAY, time(0, 0), time(0, 2));
+        assertTrue(service.getRemainingEventsForToday().isEmpty());
+    }
+
+    @Test
+    @Order(15)
+    void getRemainingToday_includesFutureEvents() {
+        // Ends near midnight — will not have passed during any realistic test run
+        service.addEvent("Late Event", TODAY, time(23, 57), time(23, 59));
+        List<Event> results = service.getRemainingEventsForToday();
+        assertEquals(1, results.size());
+        assertEquals("Late Event", results.get(0).getTitle());
+    }
+
+    @Test
+    @Order(16)
+    void getRemainingToday_excludesEventsOnOtherDays() {
+        service.addEvent("Tomorrow", TOMORROW, time(23, 57), time(23, 59));
+        assertTrue(service.getRemainingEventsForToday().isEmpty());
+    }
+
+    @Test
+    @Order(17)
+    void getRemainingToday_returnsSortedByStartTime() {
+        service.addEvent("Late",  TODAY, time(23, 50), time(23, 55));
+        service.addEvent("Early", TODAY, time(23, 30), time(23, 45));
+        List<Event> results = service.getRemainingEventsForToday();
+        assertEquals(2, results.size());
+        assertEquals("Early", results.get(0).getTitle());
+        assertEquals("Late",  results.get(1).getTitle());
+    }
+
+    // ──────────────────────────────────────────────────────────────────────────
     // getNextAvailableSlot
     // ──────────────────────────────────────────────────────────────────────────
 
@@ -207,6 +271,22 @@ class CalendarServiceTest {
     void getNextAvailableSlot_rejectsZeroDuration() {
         assertThrows(IllegalArgumentException.class,
             () -> service.getNextAvailableSlot(TOMORROW, 0));
+    }
+
+    @Test
+    @Order(18)
+    void getNextAvailableSlot_rejectsNegativeDuration() {
+        assertThrows(IllegalArgumentException.class,
+            () -> service.getNextAvailableSlot(TOMORROW, -30));
+    }
+
+    @Test
+    @Order(18)
+    void getNextAvailableSlot_returnsSlotThatFitsExactlyAtDayEnd() {
+        // Event 08:00–19:00 leaves exactly 60 min (19:00–20:00); should succeed
+        service.addEvent("Long Block", TOMORROW, time(8, 0), time(19, 0));
+        LocalTime slot = service.getNextAvailableSlot(TOMORROW, 60);
+        assertEquals(time(19, 0), slot);
     }
 
     @Test
@@ -342,6 +422,28 @@ class CalendarServiceTest {
         Event e = service.addEvent("Meeting", TODAY, time(10, 0), time(11, 0));
         assertThrows(IllegalArgumentException.class,
             () -> service.updateEvent(e.getId(), null, null, time(12, 0), time(11, 0)));
+    }
+
+    @Test
+    @Order(24)
+    void updateEvent_rejectsStartEqualToEnd() {
+        Event e = service.addEvent("Meeting", TODAY, time(10, 0), time(11, 0));
+        assertThrows(IllegalArgumentException.class,
+            () -> service.updateEvent(e.getId(), null, null, time(10, 0), time(10, 0)));
+    }
+
+    @Test
+    @Order(24)
+    void updateEvent_rejectsBlankId() {
+        assertThrows(IllegalArgumentException.class,
+            () -> service.updateEvent("  ", "Title", TODAY, time(9, 0), time(10, 0)));
+    }
+
+    @Test
+    @Order(24)
+    void updateEvent_rejectsNullId() {
+        assertThrows(IllegalArgumentException.class,
+            () -> service.updateEvent(null, "Title", TODAY, time(9, 0), time(10, 0)));
     }
 
     @Test
